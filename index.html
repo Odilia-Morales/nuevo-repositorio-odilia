@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clon-de-pinterst</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+</head>
+
+<body>
+<nav>
+<div class="navbar_pinterest_buttons_container">
+    <div class="navbar_pinteres_buttons">
+        <i class="bi bi-pinterest" style="font-size: 32px;"></i>
+        <button class="btn_inicio">Inicio</button>
+        <button class="btn_hoy">Hoy</button>
+        <select name="dropdown crear" id="dropdown_crear"> Crear
+            <option value="volvo">Crear una idea de pin</option>
+            <option value="saab">Crear pin</option>
+        </select>           
+    </div> 
+</div>
+<div class="navbar_input_search_container">
+    <div class="navbar_input_search"> 
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+        <!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg> 
+      <input class="type" type="text"></div>
+</div>
+<div class="navbar_user_buttons_container">
+    <div class="user_buttons">
+        <button id="notificación"> <i class="bi bi-bell-fill" style="font-size: 32px;"> </i> </button>
+        <button id="message"> <i class="bi bi-chat-dots-fill" style="font-size: 32px;"></i> </button>
+        <button id="perfil_foto"> <img src="./Assets/Icons/IMG-20220813-WA0043.jpg" style="height: 32px; width: 32px;" alt="foto-perfil"> </button>
+    </div> 
+</div>
+</nav>
+        <main id="content">
+        <!-- Contenedor de pines -->
+        <div class="pin_container">
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/OIP.dtDQSvhsOhDIA7fjd1ZL1gHaGu?pid=ImgDet&rs=1" alt="kick-1">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_medium">
+                <div class="card_contentmedium">
+                    <img src="https://th.bing.com/th/id/OIP.Ep90fR4ecyXz6dMUNDJdwAHaEK?pid=ImgDet&rs=1" alt="kick_manos_extendidas">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://i.ytimg.com/vi/oOAgqF418Go/hqdefault.jpg" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/R.3d8b2783bef8dfc0ace92517edac017f?rik=HzClTBtJIuCrqg&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f2ORc8Sh.jpg&ehk=G7AyCAniPtozqy34nPnFOdFtSDLfcvLWKzUxi3A8Z7c%3d&risl=&pid=ImgRaw&r=0" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://cdn1.edgedatg.com/aws/v2/dxd/KickButtowskiSuburbanDaredevil/video/228/e9f8b4796f2fe32b1a816a687a3d4735/432x242-Q90_e9f8b4796f2fe32b1a816a687a3d4735.jpg" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://wallpapercave.com/wp/ZpsFLBn.jpg" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/R.62d0b5995c1700450a6f59359e3d702a?rik=ofe8ipAcjaEkMQ&riu=http%3a%2f%2f2.bp.blogspot.com%2f-ff1MpfnGqkQ%2fT2sryH8lv3I%2fAAAAAAAAC68%2f55k-5bQFVUY%2fs1600%2fkick%2bbuttowski%2b17.jpg&ehk=JMCSrTBVTO4IyIQjd6TYWd8inomebxW5ZXzsbjtpu7w%3d&risl=&pid=ImgRaw&r=0" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://th.bing.com/th/id/OIP.7Uf7Ix5WDOJXbdNoz0o6-QAAAA?pid=ImgDet&rs=1" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://th.bing.com/th/id/R.ead4274188ddcc3a5a2ec923721a3cc4?rik=aB1Jk7%2bari1kmA&riu=http%3a%2f%2f1.bp.blogspot.com%2f-YRtBgQ_G0XY%2fVCUSaWJv57I%2fAAAAAAAAPTU%2f0frc3SM2L6M%2fs1600%2fkick_buttowski_in_a_skirt_by_crazedg-d4jn518.png&ehk=C4QGPOD6wGtZfLUmyEFJ8kG0Zi%2f0vWMDgJ5xrHAly10%3d&risl=&pid=ImgRaw&r=0" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://4.bp.blogspot.com/-NtxPhkzx7Pk/WMyvd7eCnMI/AAAAAAAAAJM/19nn0Uk7la0GPiv8fSRK9u3e3w2gmDkmwCLcB/s1600/kick-buttowski-disney-xd.jpg" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://s2.dmcdn.net/v/GDIxR1VuhMsZ8N_sO/x480" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://cdn.wallpapersafari.com/33/83/pUYEfq.jpg" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/OIP.2woTzLAv7M962tMx0BW_ugHaLt?pid=ImgDet&rs=1" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://vignette.wikia.nocookie.net/kickbuttowski/images/2/20/Tricinco_X.m4v_000126033.jpg/revision/latest?cb=20120228004821&path-prefix=es" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://th.bing.com/th/id/R.cf99a89f30120cb7e4515f87cc74f664?rik=QVkGQ8WTg1Fg%2bQ&riu=http%3a%2f%2f3.bp.blogspot.com%2f-wmzQggUvpRs%2fT2sr3j2_8DI%2fAAAAAAAAC7U%2fatMatwTu_WA%2fs1600%2fkick%2bbuttowski%2b2.jpg&ehk=vZ%2b9jHquvl3vWupgcBMtM1JlSpooEANMmIxAyAQv9Ww%3d&risl=&pid=ImgRaw&r=0" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://i.pinimg.com/originals/38/ac/ec/38acec76cbd19f919d9c070a4d9bc401.jpg" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://i.ytimg.com/vi/zggaX-weuTQ/maxresdefault.jpg" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://th.bing.com/th/id/R.b9adb30143cdfd5b26d0860b8ebab4c6?rik=6UegR9in3Ze5iw&riu=http%3a%2f%2f3.bp.blogspot.com%2f-jRJay6YQx_I%2fT2srzcuP1EI%2fAAAAAAAAC7E%2f4RTQQ_osQ6A%2fs1600%2fkick%2bbuttowski%2b18.jpg&ehk=GJy0TFkFtksSL8BtJVk1OTVNA%2faQzwVKg%2bgFw8iuJlY%3d&risl=&pid=ImgRaw&r=0" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/OIP.Rdoh5OCW_KzOAvQb8bh4twHaF4?pid=ImgDet&rs=1" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://i.pinimg.com/236x/bd/4b/a2/bd4ba2a056996a6263749c8d1aadfd03.jpg" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://i.ytimg.com/vi/D6EnwJBac3E/hqdefault.jpg" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://th.bing.com/th/id/R.4302acb959798f081227fb189c732190?rik=WeYBnTPbqDs0hA&riu=http%3a%2f%2fwallpapercave.com%2fwp%2f6aBIaIz.jpg&ehk=JfRMQoAd8aAot%2bVjnUSG7YOMf7Pq46xUlMcuqKxBaqM%3d&risl=&pid=ImgRaw&r=0" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://th.bing.com/th/id/OIP.XIe62P9JcUTMqn6AddnaagHaEv?pid=ImgDet&rs=1" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://th.bing.com/th/id/R.1dda048df4c2272b7268fcaa363aa266?rik=kXzphNu1VVPu7g&riu=http%3a%2f%2f1.bp.blogspot.com%2f-qGPjydaLfLw%2fUFEsU5ffqDI%2fAAAAAAAAKw8%2f_FOj3Y5Odqg%2fs1600%2fKick%2b8.png&ehk=9LrQUTWiR3zIhTf7UMAHE4PNJuZnBl1iNDbTaTShGYg%3d&risl=&pid=ImgRaw&r=0" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://http2.mlstatic.com/kit-imprimible-doble-de-riesgo-kick-buttowski-disena-2x1-D_NQ_NP_852601-MLM20345183997_072015-F.jpg" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://i.ytimg.com/vi/jz7e0YgCf9Q/hqdefault.jpg" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+            <div class="card card_medium">
+            <div class="card_contentmedium">
+                <img src="https://vignette.wikia.nocookie.net/kickbuttowski/images/3/31/Nocaute_Imagem_78.png/revision/latest/scale-to-width-down/640?cb=20120716185120&path-prefix=pt-br" alt="kick_manos_extendidas">
+            </div>
+            <div class="card_buttons_on_hover">
+                <div class="buttonupright">
+                 <button class="botton_guardar">Guardar</button>
+                </div>
+                <div class="bottom">
+                 <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                 </button>
+                 <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                </div>
+         </div>
+        </div>
+
+            <div class="card card_small"> 
+                <div class="card-image">
+                    <img src="https://www.justwatch.com/images/poster/244197542/s718" alt="kick">  
+                </div>
+                <div class="card_buttons_on_hover">
+                       <div class="buttonupright">
+                        <button class="botton_guardar">Guardar</button>
+                       </div>
+                       <div class="bottom">
+                        </button>
+                        <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                       </div>
+                </div>
+            </div>
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://th.bing.com/th/id/OIP._l9ynedX6Xb8xvqzw1hgXwHaFj?pid=ImgDet&rs=1" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+
+            <div class="card card_medium">
+                <div class="card_contentmedium">
+                    <img src="https://i.ytimg.com/vi/QU4EgHSCR4A/maxresdefault.jpg" alt="kick_manos_extendidas">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+
+
+            <div class="card card_large">
+                <div class="card_contenidolarge">
+                    <img src="https://th.bing.com/th/id/OIP.Rdoh5OCW_KzOAvQb8bh4twHaF4?pid=ImgDet&rs=1" alt="kick_con_patineta">
+                </div>
+                <div class="card_buttons_on_hover">
+                    <div class="buttonupright">
+                     <button class="botton_guardar">Guardar</button>
+                    </div>
+                    <div class="bottom">
+                     <button id="update"><i class="bi bi-cloud-arrow-up" style="font-size: 32px;"></i>
+                     </button>
+                     <button id="three.dots"><i class="bi bi-three-dots"> <style=font: size 32px;></style></i></button>
+                    </div>
+             </div>
+            </div>
+            
+
+           
+        </div>
+        <!-- Fin de contenedor de pines -->
+        <!-- Botón flotante -->
+        <div class="container-fluid d-flex position-absolute bottom-0 end-0">
+            <a title="Agregar" class="btn btn-primary btn-lg rounded-circle ms-auto me-5 mb-5"
+                ng-click="disposeRequest()" data-bs-toggle="modal" data-bs-target="#newRequest">
+                <i class="fa-solid fa-plus"></i>
+            </a>
+        </div>
+        <!-- Fin botón flotante -->
+    </main>
+</body>
+
+</html>
